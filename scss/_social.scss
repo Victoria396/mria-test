@@ -1,0 +1,68 @@
+.socials {
+        position: absolute;
+        z-index: 1;
+        right: 83px;
+        top: 279px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 242px;
+    .soc-stroke {
+        fill: none !important;
+    }
+    .soc-stroke-f,
+    .soc-stroke-tw,
+    .soc-stroke-inst {
+        position: relative;
+        top: -42px;
+        left: -27px;
+    }
+    .soc-stroke-tw {
+        top: -43px;
+        left: -27px;
+    }
+    .soc-stroke-inst {
+        top: -44px;
+        left: -24px;
+    }
+    .fb {
+        background: white;
+        height: 35px;
+        width: 27px;
+        padding: 15px 3px 0px 21px;
+        border-radius: 50%;
+        svg {
+            fill: $social;
+        }
+    }
+    .tw {
+        background: white;
+        height: 5px;
+        width: 12px;
+        padding: 21px 20px 28px 22px;
+        border-radius: 50%;
+        svg {
+            fill: $social;
+        path {
+        }
+        }
+    }
+    .inst {
+        background: white;
+        height: 25px;
+        width: 14px;
+        padding: 19px 20px 9px 19px;
+        border-radius: 50%;
+        svg {
+            fill: $social;
+        path {
+        }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .socials {
+        display: none !important;
+    }
+}

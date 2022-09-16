@@ -1,0 +1,34 @@
+@import "_var";
+@import "_fonts";
+@import "_reset";
+
+a, p, h2, button, li {
+    color: $gray;
+    font-family: EuclidB;
+    tab-size: 14px;
+}
+
+a, button {
+    &:hover {
+        color: $gold;
+        cursor: pointer;
+    }
+}
+
+h1, h2, h3 {
+    font-family: SangKung;
+    color: $gray;
+    font-size: 96px;
+}
+
+@import "_flower";
+@import "_header";
+@import "_menu";
+@import "_mria";
+@import "_social";
+@import "_weather";
+@import "_choice";
+@import "_choice-slider";
+@import "_spa";
+@import "_inclusive";
+@import "_tablet";
