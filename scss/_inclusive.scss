@@ -1,0 +1,688 @@
+.inclusive {
+        padding-left: 116px;
+        margin-left: 24px;
+        margin-top: -235px;
+        background-color: #F6F6F6;
+        max-width: 1276px;
+        width: 100%;
+        height: 782px;
+        padding-top: 73px;
+        border-radius: 24px;
+    a {
+        margin-left: 16px;
+        margin-top: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 10px;
+        color: $gold;
+        font-weight: 600;
+        svg {
+            fill: $gold;
+            position: relative;
+            top: -3px;
+            left: 3px;
+        }
+        &:hover {color: $beige;}
+        &:active {color: $beige;}
+        &:focus {color: $beige;}
+        }
+    .inclusive__top {
+        display: flex;
+        h2 {
+            font-family: 'SangBleu Kingdom';
+            font-weight: 700;
+            font-size: 74px;
+            line-height: 56px;
+        }
+        .inclusive__arrows {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 33px;
+            div {
+                img {
+                    width: 40px;
+                    height: 40px;
+                    margin-top:11px;
+                    margin-right: 17px;
+                }
+            }
+        }
+    }
+    &__content {
+        margin-top: 60px;
+        .inclusive__overflow {
+                max-width: 1440px;
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+                padding-top: 120px;
+                margin-top: -117px;
+            .inclusive__line {
+                display: flex;
+            }
+            .inclusive__slide1 {
+                margin-right: 143px;
+                display: grid; 
+                grid-template-columns: 1fr 1fr 1fr; 
+                grid-template-rows: 1fr; 
+                gap: 0px 0px; 
+                grid-template-areas: 
+                    ". . ."; 
+            .slide__text {
+                margin-top: -5px;
+            }
+            .sport {
+                display: flex;
+                flex-direction: column;
+            }
+            .sport p {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                margin-top: 22px;
+                margin-left: 16px;
+                max-width: 510px;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .food {
+                display: flex;
+                flex-direction: column;
+                margin-left: 40px;
+                margin-top: -10px;
+            }
+            .places {
+                display: flex;
+                flex-direction: column;
+                margin-left: 23px;
+                margin-top: -112px;
+                background: $white;
+                max-width: 276px;
+                width: 100%;
+                height: 489px;
+                border-radius: 5px;
+                padding: 8px;
+                align-items: center;
+                box-shadow: 0px 8px 16px rgba(142, 124, 78, 0.16);
+                z-index: 1;
+            }
+            .places p {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                max-width: 228px;
+                width: 100%;
+                margin-top: 14px;
+                margin-bottom: 10px;
+            }
+            .places a {
+                margin-left: 1px;
+            }
+            div {
+            img {
+            }
+            }
+            .title {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                color: #999999;
+            }
+            .subtitle {
+                max-width: 260px;
+                width: 100%;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 32px;
+                margin-top: 24px;
+            }
+            div {
+            .food__img {
+                margin-top: 58px;
+            }
+            }
+            .text {
+                max-width: 228px;
+                width: 100%;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 24px;
+                margin-top: 21px;
+                margin-left: 16px;
+                margin-bottom: 10px;
+            }
+            div {
+            img {
+            }
+            }
+            a {
+            svg {
+            }
+            &:hover {}
+            &:active {}
+            &:focus {}
+            }
+        }
+        }
+    }
+}
+
+.lines {
+    background: url(../img/inclusive-lines-left.png) top 188px left 20px/459px 845px no-repeat, 
+                url(../img/inclusive-lines-right.png) top 181px right 26px/304px 853px no-repeat;
+    height: 1034px;
+    position: relative;
+    top: -1037px;
+    z-index: 0;
+}
+
+@media (max-width: 1415px) {
+    .inclusive {
+        max-width: 1160px;
+        a {
+            svg {
+            }
+            }
+        .inclusive__top {
+            h2 {
+            }
+            .inclusive__arrows {
+                div {
+                    img {
+                    }
+                }
+            }
+        }
+        &__content {
+            .inclusive__overflow {
+                .inclusive__line {
+                }
+                .inclusive__slide1 {
+                .sport {
+                }
+                .sport p {
+                }
+                .food {
+                }
+                .places {
+                    margin-left: 5px;
+                }
+                .places p {
+                }
+                .places a {
+                }
+                div {
+                img {
+                }
+                }
+                .title {
+                }
+                .subtitle {
+                }
+                div {
+                .food__img {
+                }
+                }
+                .text {
+                }
+                div {
+                img {
+                }
+                }
+                a {
+                svg {
+                }
+                &:hover {}
+                &:active {}
+                &:focus {}
+                }
+            }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .lines {
+        display: none;
+    }
+    .inclusive {
+        background: none;
+        max-width: 720px;
+        a {
+            svg {
+            }
+            }
+        .inclusive__top {
+            h2 {
+            }
+            .inclusive__arrows {
+                div {
+                    img {
+                    }
+                }
+            }
+        }
+        &__content {
+            img {
+                width: 400px;
+                height: 400px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            .inclusive__overflow {
+                max-width: 830px;
+                .inclusive__line {
+                }
+                .inclusive__slide1 {
+                    margin-right: 143px;
+                    display: grid; 
+                    grid-template-columns: 1fr; 
+                    grid-template-rows: 1fr 1fr 1fr; 
+                    gap: 0px 0px; 
+                    grid-template-areas: 
+                        "."
+                        "."
+                        ".";
+                .sport {
+                    flex-direction: inherit;
+                }
+                .sport p {
+                }
+                .slide__text {
+                    display: flex;
+                    flex-direction: column;
+                    width: 300px;
+                }
+                .food {
+                    margin-top: 10px;
+                    margin-left: 0;
+                    display: flex;
+                    flex-direction: inherit;
+                }
+                .places {
+                    display: flex;
+                    flex-direction: inherit;
+                    background: none;
+                    box-shadow: none;
+                    margin-left: 0;
+                    margin-top: -35px;
+                    padding: 0;
+                    width: 600px;
+                    height: 300px;
+                    margin-top: 70px;
+                }
+                .places p {
+                    max-width: 300px;
+                    width: 300px;
+                    margin-top: -180px;
+                    margin-left: 13px;
+                }
+                .places a {
+                    margin-left: 13px;
+                }
+                div {
+                img {
+                }
+                }
+                .title {
+                    display: none;
+                }
+                .subtitle {
+                    display: none;
+                }
+                div {
+                .food__img {
+                    margin-top: 0;
+                }
+                }
+                .text {
+                    max-width: 300px;
+                }
+                div {
+                img {
+                }
+                }
+                a {
+                svg {
+                }
+                &:hover {}
+                &:active {}
+                &:focus {}
+                }
+            }
+            }
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    .inclusive {
+        max-width: 402px;
+        margin-top: -100px;
+        margin-left: 50px;
+        a {
+            svg {
+            }
+            }
+        .inclusive__top {
+            h2 {
+                font-size: 38px;
+            }
+            .inclusive__arrows {
+                div {
+                    img {
+                    }
+                }
+            }
+        }
+        &__content {
+            img {
+                object-fit: contain;
+            }
+            .inclusive__overflow {
+                max-width: 405px;
+                .inclusive__line {
+                }
+                .inclusive__slide1 {
+                    margin-top: -30px;
+                .sport {
+                    flex-direction: column;
+                }
+                .sport p {
+                }
+                .slide__text {
+                    margin-top: -15px;
+                }
+                .food {
+                    flex-direction: column;
+                    margin-top: -10px;
+                }
+                .places {
+                    flex-direction: column;
+                    margin-left: 63px;
+                    padding: 0;
+                    width: 600px;
+                    height: 300px;
+                    margin-top: 0px;
+                }
+                .places p {
+                    max-width: 300px;
+                    width: 300px;
+                    margin-top: 20px;
+                    margin-left: -30px;
+                }
+                .places a {
+                    margin-left: 13px;
+                }
+                div {
+                img {
+                    object-fit: cover;
+                }
+                }
+                .title {
+                    display: none;
+                }
+                .subtitle {
+                    display: none;
+                }
+                div {
+                .food__img {
+                    margin-top: 0;
+                }
+                }
+                .text {
+                    max-width: 300px;
+                }
+                div {
+                img {
+                }
+                }
+                a {
+                svg {
+                }
+                &:hover {}
+                &:active {}
+                &:focus {}
+                }
+            }
+            }
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    .inclusive {
+        max-width: 400px;
+        margin-left: -66px;
+        a {
+            svg {
+            }
+            }
+        .inclusive__top {
+            h2 {
+            }
+            .inclusive__arrows {
+                div {
+                    img {
+                    }
+                }
+            }
+        }
+        &__content {
+            img {
+            }
+            .inclusive__overflow {
+                .inclusive__line {
+                }
+                .inclusive__slide1 {
+                .sport {
+                }
+                .sport p {
+                }
+                .slide__text {
+                }
+                .food {
+                }
+                .places {
+                }
+                .places p {
+                }
+                .places a {
+                }
+                div {
+                img {
+                }
+                }
+                .title {
+                }
+                .subtitle {
+                }
+                div {
+                .food__img {
+                }
+                }
+                .text {
+                }
+                div {
+                img {
+                }
+                }
+                a {
+                svg {
+                }
+                &:hover {}
+                &:active {}
+                &:focus {}
+                }
+            }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .inclusive {
+        max-width: 328px;
+        margin-left: -85px;
+        a {
+            svg {
+            }
+            }
+        .inclusive__top {
+            h2 {
+                font-size: 26px;
+            }
+            .inclusive__arrows {
+                div {
+                    img {
+                    }
+                }
+            }
+        }
+        &__content {
+            img {
+                width: 328px;
+                height: 232px;
+            }
+            .inclusive__overflow {
+                .inclusive__line {
+                }
+                .inclusive__slide1 {
+                .sport {
+                }
+                .sport p {
+                }
+                .slide__text {
+                }
+                .food {
+                }
+                .places {
+                    margin-left: 26px;
+                }
+                .places p {
+                    margin-left: 0;
+                }
+                .places a {
+                    margin-left: 0;
+                }
+                div {
+                img {
+                }
+                }
+                .title {
+                }
+                .subtitle {
+                }
+                div {
+                .food__img {
+                }
+                }
+                .text {
+                }
+                div {
+                img {
+                }
+                }
+                a {
+                svg {
+                }
+                &:hover {}
+                &:active {}
+                &:focus {}
+                }
+            }
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .inclusive {
+        background-color: #F6F6F6;
+        max-width: 328px;
+        height: 1190px;
+        margin: -232px 0px 0px 0px;
+        padding: 18px 16px 24px 16px;
+        a {
+            svg {
+            }
+            }
+        .inclusive__top {
+            h2 {
+                font-size: 27px;
+                white-space: nowrap;
+            }
+            .inclusive__arrows {
+                margin-left: 59px;
+                margin-top: -3px;
+                div {
+                    img {
+                    }
+                }
+            }
+        }
+        &__content {
+            img {
+                width: 328px;
+                height: 232px;
+            }
+            .inclusive__overflow {
+                .inclusive__line {
+                }
+                .inclusive__slide1 {
+                    margin-top: -40px;
+                a {
+                    margin-top: 7px;
+                }
+                .sport {
+                }
+                .sport p {
+                }
+                .slide__text {
+                    margin-top: -2px;
+                }
+                .food {
+                    margin-top: 8px;
+                }
+                .places {
+                    margin-top: 38px;
+                    height: 330px;
+                }
+                .places p {
+                    margin-top: 22px;
+                }
+                .places a {
+                }
+                div {
+                img {
+                }
+                }
+                .title {
+                }
+                .subtitle {
+                }
+                div {
+                .food__img {
+                }
+                }
+                .text {
+                }
+                div {
+                img {
+                }
+                }
+                a {
+                svg {
+                }
+                &:hover {}
+                &:active {}
+                &:focus {}
+                }
+            }
+            }
+        }
+    }
+}

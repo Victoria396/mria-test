@@ -1,0 +1,67 @@
+.weather {
+    position: absolute;
+    right: 223px;
+    bottom: 161px;
+    display: flex;
+    justify-content: space-between;
+    .bkg {
+        position: absolute;
+        top: -166px;
+        left: -411px;
+    }
+    .bkg-eff {
+        top: -164px;
+        left: -499px;
+    }
+    &__pic {
+        position: absolute;
+        div {
+            .cloudy-pic {
+                top: -63px;
+                left: -160px;
+            }
+            .pin {
+                top: 27px;
+                left: -113px;
+            }
+        img {
+            position: absolute;
+        }
+        }
+    }
+    &__text {
+        position: absolute;
+    }
+    &__text p {
+        color: $white;
+        position: absolute;
+    }
+        .temp {
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 56px;
+            top: -69px;
+            left: -76px;
+        }
+        .cloudy {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 32px;
+            top: -15px;
+            left: -77px;
+        }
+        .gps {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            white-space: nowrap;
+            top: 23px;
+            left: -77px;
+        }
+}
+
+@media (max-width: 1230px) {
+    .weather {
+        display: none !important;
+    }
+}
