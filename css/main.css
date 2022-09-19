@@ -1697,6 +1697,7 @@ header .entry ul svg {
   .choice__arrows {
     left: 80px;
     top: 1322px;
+    opacity: 0.1;
   }
   .choice__tab-list {
     overflow-x: scroll;
@@ -1991,7 +1992,7 @@ header .entry ul svg {
   transition: all ease 1s;
 }
 .inclusive__content .inclusive__overflow .inclusive__slide1 {
-  padding-right: 143px;
+  padding-right: 267px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
@@ -2332,7 +2333,7 @@ header .entry ul svg {
   }
   .inclusive__content .inclusive__overflow .inclusive__slide1 {
     margin-top: -40px;
-    padding-right: 0;
+    padding-right: 35px;
   }
   .inclusive__content .inclusive__overflow .inclusive__slide1 a {
     margin-top: 7px;

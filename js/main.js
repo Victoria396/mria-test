@@ -49,21 +49,6 @@ toggler.addEventListener("click", function() {
         document.querySelector('.inclusive').style.opacity = 0.5;
         document.querySelector('.lines').style.opacity = 0.5;
         document.querySelector('.tablet').style.opacity = 0.5;
-        // if (screenWidth < 800) {
-        //     document.querySelector('.flower-mob').style.background = 'url(../img/flower-mob-opacity.png) top -43px right/320px 624px no-repeat'
-        //     document.querySelector('.flower2-mob').style.background = 'url(../img/flower2mob-opacity.png) top -43px right/320px 624px no-repeat'
-        // } if (screenWidth < 600) {
-        //     document.querySelector('.flower-mob').style.background = 'url(../img/flower-mob-opacity.png) top -43px right/196px 413px no-repeat'
-        //     document.querySelector('.flower2-mob').style.background = 'url(../img/flower2mob-opacity.png) top -43px right/196px 413px no-repeat'
-        // } if (screenWidth < 400) {
-        //     document.querySelector('.flower-mob').style.background = 'url(../img/flower-mob-opacity.png) top -90px right/144px 413px no-repeat'
-        //     document.querySelector('.flower2-mob').style.background = 'url(../img/flower2mob-opacity.png) top -90px right/144px 413px no-repeat'
-        // }
-        // else {
-        //     document.querySelector('.flower').style.background = 'url(../img/flower-opacity.png) top right/909px 936px no-repeat'
-        //     document.querySelector('.flower2').style.background = 'url(../img/flower-opacity.png) top right/909px 936px no-repeat'
-        // }
-
     }else {
         toggler.classList.remove('active');
         header.classList.remove('h-active');
@@ -74,22 +59,7 @@ toggler.addEventListener("click", function() {
         document.querySelector('.inclusive').style.opacity = 1;
         document.querySelector('.lines').style.opacity = 1;
         document.querySelector('.tablet').style.opacity = 1;
-        // if (screenWidth < 800) {
-        //     document.querySelector('.flower-mob').style.background = 'url(../img/flower-mob.png) top -43px right/320px 624px no-repeat'
-        //     document.querySelector('.flower2-mob').style.background = 'url(../img/flower2mob.png) top -43px right/320px 624px no-repeat'
-        // } if (screenWidth < 600) {
-        //     document.querySelector('.flower-mob').style.background = 'url(../img/flower-mob.png) top -43px right/196px 413px no-repeat'
-        //     document.querySelector('.flower2-mob').style.background = 'url(../img/flower2mob.png) top -43px right/196px 413px no-repeat'
-        // } if (screenWidth < 400) {
-        //     document.querySelector('.flower-mob').style.background = 'url(../img/flower-mob.png) top -90px right/144px 413px no-repeat'
-        //     document.querySelector('.flower2-mob').style.background = 'url(../img/flower2mob.png) top -90px right/144px 413px no-repeat'
-        // }
-        // else {
-        //     document.querySelector('.flower').style.background = 'url(../img/flower.png) top right/909px 936px no-repeat'
-        //     document.querySelector('.flower2').style.background = 'url(../img/flower.png) top right/909px 936px no-repeat'
-        // }
     }
-    
 });
 
 // ховеры в меню 
@@ -167,7 +137,7 @@ document.querySelector('.dot3')
 // код для слайдерa спец предложения
 const slide1Line = document.querySelector(".slider1__line");
 let slideWidth = document.querySelector(".choice__slider1").offsetWidth;
-// console.log(slideWidth);
+console.log(slideWidth);
 let offset2 = 0;
 
     document.querySelector(".arrow-next").addEventListener('click', function() {
@@ -180,13 +150,13 @@ let offset2 = 0;
     if (screenWidth < 360) {
         slide1Line.style.left = -offset2 / 2 + 'px';
     } else {
-        slide1Line.style.left = -offset2 * 1.131 + 'px';
+        slide1Line.style.left = -offset2 / 2 + 'px';
     }
 });
 
     document.querySelector(".arrow-prev").addEventListener('click', function() {
     offset2 += slideWidth;
-    // console.log(offset2);
+    console.log(offset2);
     if (offset2 > slideWidth) {
         offset2 = 0;
     }
@@ -194,7 +164,7 @@ let offset2 = 0;
     if (screenWidth < 360) {
         slide1Line.style.left = -offset2 / 2 + 'px';
     } else {
-        slide1Line.style.left = -offset2 * 1.131 + 'px';
+        slide1Line.style.left = -offset2 /2 + 'px';
     }
 });
 
@@ -212,9 +182,9 @@ let offset3 = 0;
     }
 
     if (screenWidth < 360) {
-        slide2Line.style.left = -offset3 / 2 + 'px';
+        slide2Line.style.left = -offset3 / 4 + 'px';
     } else {
-        slide2Line.style.left = -offset3 * 1.12 + 'px';
+        slide2Line.style.left = -offset3 / 2 + 'px';
     }
 });
 
@@ -225,10 +195,10 @@ let offset3 = 0;
         offset3 = 0;
     }
 
-    if (screenWidth < 360) {
-        slide2Line.style.left = -offset3 / 2 + 'px';
+    if (screenWidth < 361) {
+        slide2Line.style.left = -offset3 + 'px';
     } else {
-        slide2Line.style.left = -offset3 * 1.12 + 'px';
+        slide2Line.style.left = -offset3 / 2 + 'px';
     }
 });
 
@@ -240,15 +210,15 @@ let offset4 = 0;
 
     document.querySelector(".arrow-next").addEventListener('click', function() {
     offset4 += slide3Width;
-    // console.log(offset4);
+    console.log(offset4);
     if (offset4 > slide3Width) {
         offset4 = 0;
     }
 
     if (screenWidth < 360) {
-        slide3Line.style.left = -offset4 /2 + 'px';
+        slide3Line.style.left = -offset4 + 'px';
     } else {
-        slide3Line.style.left = -offset4 * 4.8 + 'px';
+        slide3Line.style.left = -offset4 / 1.8 + 'px';
     }
 });
 
@@ -260,9 +230,9 @@ let offset4 = 0;
     }
 
     if (screenWidth < 360) {
-        slide3Line.style.left = -offset4 / 2 + 'px';
+        slide3Line.style.left = -offset4 / 4 + 'px';
     } else {
-        slide3Line.style.left = -offset4 * 4.8 + 'px';
+        slide3Line.style.left = -offset4 / 1.8 + 'px';
     }
 });
 
@@ -282,7 +252,7 @@ let offset5 = 0;
 
     if (screenWidth < 1300) {
         slide4Line.style.left = -offset5 + 'px';
-    } if (screenWidth < 860) {
+    } if (screenWidth < 360) {
         slide4Line.style.left = -offset5 + 'px';
     }  
     else {
