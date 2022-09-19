@@ -52,6 +52,9 @@
         justify-content: space-between;
         max-width: 2880px;
         width: 100%;
+        position: relative;
+        left: 0;
+        transition: all ease 1s;
 }
 
 .choice__slider1,
@@ -148,6 +151,7 @@
     .choice__arrows {
         left: 80px;
         top: 1322px;
+        opacity: .1;
     }
     .choice__tab-list {
         overflow-x: scroll;

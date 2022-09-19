@@ -1,110 +1,21 @@
 .menu {
-    div {
-        ul {
-            background-color: $dark-gray;
-            width: 1360px;
-            height: 768px;
-            top: 80px;
-            position: absolute;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            visibility: hidden;
-            z-index: 10;
-            svg {
-                fill: $white;
-            }
-            .menu-hr {
-                border-bottom: 1px solid rgba(196, 196, 196, 0.08);
-                width: 100%;
-                height: 80px;
-                padding-bottom: 0;
-                z-index: 10;
-            }
-            .menu-header {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 601px;
-                padding-top: 7px;
-                margin-left: 51px;
-            }
-            .menu-header a {
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 24px;
-                letter-spacing: 0.08em;
-                text-transform: uppercase;
-            }
-            .menu-nav {
-                padding-top: 6px;
-                position: relative;
-                left: -19px;
-            }
-            .menu-entry {
-                display: flex;
-                margin-top: -38px;
-                position: relative;
-                left: 1076px;
-            }
-            .menu-entry a {
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 24px;
-                letter-spacing: 0.08em;
-                text-transform: uppercase;
-                margin-left: 8px;
-                border-bottom: 2px dashed #FFFFFF;
-            }
-            .menu-level1 {
-                position: relative;
-                top: -297px;
-                left: -356px;
-                .list {
-                    position: relative;
-                    left: 117px;
-                    top: 202px;
-                    overflow-y: scroll;
-                    height: 544px;
-                    width: 365px;
-                    li {
-                        margin-bottom: 32px;
-                    }
-                }
-            }
-            li a {
-                font-family: 'EuclidB';
-                text-transform: initial;
-                font-weight: 300;
-                font-size: 24px;
-                line-height: 32px;
-                color: #FFFFFF;
-                text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.32);
-            }
-        }
-    }
+    opacity: 0;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    z-index: 0;
 }
-
-.menu div ul .menu-level1 .hr1 {
-    transform: rotate(90deg);
-    position: relative;
-    top: 388px;
-    right: 240px;
-    width: 368px;
-    background-color: $gold;
-    opacity: .4;
+.m-active {
+    transition: all .5s ease;
+    opacity: 1;
+    z-index: 10;
+    max-width: 1360px;
+    width: 100%;
+    height: 688px;
+    background-color: $dark-gray;
+    position: absolute;
+    top: 80px;
 }
-
-.menu div ul .menu-level1 .hr2 {
-    width: 552px;
-    transform: rotate(90deg);
-    position: relative;
-    background-color: $gold;
-    opacity: .4;
-    left: 216px;
-    top: -73px;
-}
-
 
 .toggler{
     z-index:2;
@@ -183,23 +94,283 @@
     background: $white;
 }
 
-.menu{
-    background: white;
-    width: 0%;
-    height: 100vh;
-    transition: all 1s ease;
+.info {
+    position: absolute;
+    right: 60px;
+    bottom: 23px;
+    text-transform: uppercase;
 }
 
-.toggler:checked ~ .menu{
-    width: 30%;
+.info p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    color: $white;
+    opacity: 0.64;
 }
 
-.toggler:checked ~ .menu > .menu-open > div > ul{
-    transition: visibility 1s ease;
-    transition-delay: 0.1s;
-    visibility: visible;
+.menu-btn,
+.menu-list {
+    display: none;
 }
 
-.toggler:checked ~ .menu > div > ul > li > a:hover{
-    background-color: $gold;
+@media (max-width: 1360px) {
+    .m-active {
+        max-width: 1200px;
+    }
+    .h-active .hr3 {
+        width: 1053px;
+    }
+    .h-active nav ul {
+        font-size: 13px;
+        letter-spacing: 0;
+        margin-left: -100px;
+    }
+    .h-active hr  {
+        display: none;
+    }
+    .h-active .list-level2 li {
+        font-size: 21px;
+        line-height: 29px;
+        left: -278px;
+    }
+    .h-active .list-level2 li:last-child {
+        width: 277px;
+    }
 }
+
+@media (max-width: 1195px) {
+    .h-active nav ul {
+        margin-left: 60px;
+    }
+    .h-active .list-level1 {
+        margin-left: 11px;
+    }
+    .h-active .list-level1 > li {
+        font-size: 20px;
+        width: 264px;
+    }
+    .h-active .list-level2 {
+        margin-left: 344px;
+    }
+    .h-active .list-level2 li {
+        font-size: 20px;
+        width: 300px;
+        left: -263px;
+    }
+    .info {
+        left: 60px;
+    }
+    .m-active {
+        max-width: 1075px;
+    }
+}
+
+@media (max-width: 1075px) {
+    .slider, .dots {
+        display: none !important;
+    }
+    .m-active {
+        max-width: 710px;
+        height: 900px;
+    }
+    .h-active .list-level1 {
+        width: 45%;
+    }
+    .h-active .socialsMob {
+        display: flex !important;
+        flex-direction: inherit;
+        width: 223px;
+        right: auto;
+        z-index: 10;
+        position: absolute;
+        left: 37px;
+        top: 800px;
+        .svgMob {
+            fill: $gold;
+            left: 23px;
+            top: 42px;
+            position: relative;
+        }
+    }
+    .h-active .RuMob {
+        display: flex !important;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: $white;
+        margin-left: 25px;
+    }
+    .menu-btn {
+        display: block !important;
+        margin-top: 55px;
+        margin-left: 10px;
+    }
+    .menu-btn-room {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: $white;
+        background-color: $gold;
+        border: none;
+        border-radius: 5px;
+        padding: 15px 85px;
+    }
+    .menu-list {
+        display: flex;
+        margin-top: 55px;
+        margin-left: 15px;
+    }
+    .menu-list ul > li {
+        color: $white;
+        margin-right: 20px;
+    }
+    .menu-list ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 1030px) {
+    .h-active .text {
+        color: $white !important;
+        border-bottom: 2px dashed $white !important;
+    }
+    .h-active .list-level2 {
+        width: 300px;
+    }
+}
+
+@media (max-width: 980px) {
+    .m-active {
+        height: 1300px;
+    }
+    .h-active .list-level2 li:last-child {
+        display: none !important;
+    }
+    .h-active .list-level1 {
+        margin-left: 20px;
+        margin-top: 25px;
+        overflow-y: hidden; 
+        overflow-x: hidden; 
+        height: 100%;
+        width: 50%;
+    }
+    .h-active .list-level1 > li {
+        padding: 15px 0px 16px 24px;
+    }
+    .h-active .list-level1 > li:nth-child(11n),
+    .h-active .list-level1 > li:nth-child(10n) {
+        display: none;
+    }
+    .h-active .list-level2 {
+        position: relative;
+        margin-left: 35px;
+    }
+    .h-active .list-level2 li {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+    .h-active .socialsMob {
+        top: 1160px;
+    }
+    .h-active .numberMob {
+        display: block !important;
+        color: $white;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        position: absolute;
+        top: 1274px;
+        left: 81px;
+        z-index: 10;
+    }
+
+}
+
+@media (max-width: 580px) {
+    .h-active .list-level1 {
+        width: 62%;
+    }
+}
+
+@media (max-width: 480px) {
+    .h-active .list-level1 {
+        width: 85%;
+    }
+}
+
+@media (max-width: 360px) {
+    .h-active {
+        background-color: $gray;
+    }
+    .h-active .list-level1 {
+        margin-left: 0px;
+        margin-top: 2px;
+        height: 637px;
+        width: 360px;
+    }
+    .h-active .list-level1 > li {
+        padding: 10px 0 0px 16px;
+        width: 340px;
+        height: 43px;
+    }
+    .level1-item-activeMob {
+        margin-top: 14px;
+    }
+    .h-active .list-level2 {
+        position: relative;
+        margin-left: 60px;
+        margin-top: -30px;
+    }
+    .menu-btn {
+        margin-top: 41px;
+        margin-left: 15px;
+    }
+    .menu-btn-room {
+        padding: 19px 106px;
+    }
+    .menu-list ul > li {
+        font-size: 16px;
+    }
+    .menu-list ul {
+        width: 337px;
+        margin-top: -18px;
+        height: 115px;
+    }
+    .h-active .socialsMob {
+        top: 983px;
+        left: 68px;
+        .svgMob {
+            position: relative;
+            top: -23px;
+            left: 37px;
+        }
+        .soc-stroke {
+            width: 50px;
+        }
+    }
+    .h-active .numberMob {
+        top: 1071px;
+        left: 123px;
+    }
+    .m-active {
+        height: 1095px;
+    }
+    .info {
+        left: 80px;
+        bottom: 40px;
+    }
+}
+

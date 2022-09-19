@@ -1,4 +1,5 @@
 .flower {
+    transition: all 1s ease;
     background: url(../img/flower.png) top right/909px 936px no-repeat,
         url(../img/flower_stroke.png) top right/954px 924px no-repeat;
     position: relative;
@@ -6,6 +7,7 @@
 }
 
 .flower2 {
+    transition: all 1s ease;
     background: url(../img/flower2.png) top right/909px 936px no-repeat,
         url(../img/flower_stroke.png) top right/954px 924px no-repeat;
     position: relative;
@@ -82,14 +84,10 @@
         margin-bottom: -23px;
     }
     .flower-mob {
+        transition: all 1s ease;
         background: url(../img/flower-mob.png) top -43px right/320px 624px no-repeat,
             url(../img/flower_strokeMobile.png) top -43px right/341px 1037px no-repeat;
     }
-
-    .flower2-mob {
-        background: url(../img/flower2mob.png) top -43px right/320px 624px no-repeat,
-            url(../img/flower_strokeMobile.png) top -43px right/341px 1037px no-repeat;
-    } 
     
     .flower {
         background: none;
@@ -100,43 +98,11 @@
     }
 }
 
-@media (max-width: 800px) {
-    hr {
-        margin-bottom: -23px;
-    }
-    .flower-mob {
-        background: url(../img/flower-mob.png) top -43px right/320px 624px no-repeat,
-            url(../img/flower_strokeMobile.png) top -43px right/341px 1037px no-repeat;
-    }
-
-    .flower2-mob {
-        background: url(../img/flower2mob.png) top -43px right/320px 624px no-repeat,
-            url(../img/flower_strokeMobile.png) top -43px right/341px 1037px no-repeat;
-    } 
-}
-
-@media (max-width: 700px) {
-    .flower-mob {
-        background: url(../img/flower-mob.png) top -43px right/calc(320px*0.81) 624px no-repeat,
-            url(../img/flower_strokeMobile.png) top -43px right/calc(320px*0.84) 1037px no-repeat;
-    }
-
-    .flower2-mob {
-        background: url(../img/flower2mob.png) top -43px right/calc(320px*0.81) 624px no-repeat,
-            url(../img/flower_strokeMobile.png) top -43px right/calc(320px*0.84) 1037px no-repeat;
-    } 
-}
-
 @media (max-width: 600px) {
     .flower-mob {
         background: url(../img/flower-mob.png) top -43px right/196px 413px no-repeat,
             url(../img/flower_strokeMobile.png) top -43px right/211px 690px no-repeat;
     }
-
-    .flower2-mob {
-        background: url(../img/flower2mob.png) top -43px right/196px 413px no-repeat, 
-        url(../img/flower_strokeMobile.png) top -43px right/211px 690px no-repeat;
-    } 
 }
 
 @media (max-width: 400px) {
@@ -144,9 +110,4 @@
         background: url(../img/flower-mob.png) top -90px right/144px 413px no-repeat,
             url(../img/flower_strokeMobile.png) top -90px right/156px 690px no-repeat;
     }
-
-    .flower2-mob {
-        background: url(../img/flower2mob.png) top -90px right/144px 413px no-repeat, 
-                    url(../img/flower_strokeMobile.png) top -90px right/156px 690px no-repeat;
-    } 
 }
