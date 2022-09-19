@@ -52,6 +52,9 @@
         justify-content: space-between;
         max-width: 2880px;
         width: 100%;
+        position: relative;
+        left: 0;
+        transition: all ease 1s;
 }
 
 .choice__slider1,

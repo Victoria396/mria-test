@@ -1,0 +1,169 @@
+.slider {
+    position: absolute;
+    right: 0;
+    top: 0;
+    &__overfow {
+            max-width: 420px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+    .slider__line {
+            display: flex;
+            position: relative;
+            left: 0;
+            transition: all 1s ease;
+        .slider1 {
+        }
+        div {
+            img {
+            }
+        }
+        .slide-content {
+            top: -419px;
+            position: relative;
+            div {
+                top: 197px;
+                position: relative;
+                left: 39px;
+                z-index: 1;
+            .title {
+                    font-weight: 700;
+                    font-size: 47px;
+                    line-height: 56px;
+                    color: $white;
+                    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.32);
+            }
+            .subtitle {
+                    font-weight: 300;
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: $white;
+                    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.32);
+            }
+            .btn {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                color: $white;
+                border-radius: 5px;
+                background-color: $gold;
+                border: none;
+                margin-top: 28px;
+                padding: 19px 52px 19px 52px;
+                &:hover {background-color: $beige;}
+                &:active {background-color: $beige;}
+                &:focus {background-color: $beige;}
+            }
+            }
+            .slide-bkg {
+                top: -67px;
+                left: 0px;
+                z-index: 0;
+            }
+        }
+        }
+    }
+}
+
+.dots {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    position: absolute;
+    right: 41px;
+    bottom: 112px;
+    z-index: 10;
+    .border1,
+    .border2,
+    .border3 {
+        position: absolute;
+    }
+    .border1 {
+        left: -10px;
+        top: -4px;
+        display: none;
+    }
+    .border2 {
+        left: 22px;
+        top: -4px;
+        display: none;
+    }
+    .border3 {
+        left: 55px;
+        top: -4px;
+        display: none;
+    }
+    .dot1 {
+        &:hover {
+            cursor: pointer;
+        }
+        svg {
+            circle {
+                fill: $white;
+                &:hover {
+                    fill: $gold;
+                }
+                &:active {
+                    fill: $gold;
+                }
+                &:focus {
+                    fill: $gold;
+                }
+            }
+        }
+    }
+    .dot2 {
+        &:hover {cursor: pointer;}
+        svg {
+            circle {
+                fill: $white;
+                &:hover {
+                    fill: $gold;
+                    .border2 {
+                        display: block;
+                    }
+                }
+                &:active {
+                    fill: $gold;
+                    .border2 {
+                        display: block;
+                    }
+                }
+                &:focus {
+                    fill: $gold;
+                    .border2 {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .dot3 {
+        &:hover {cursor: pointer;}
+        svg {
+            circle {
+                fill: $white;
+                &:hover {
+                    fill: $gold;
+                    .border3 {
+                        display: block;
+                    }
+                }
+                &:active {
+                    fill: $gold;
+                    .border3 {
+                        display: block;
+                    }
+                }
+                &:focus {
+                    fill: $gold;
+                    .border3 {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

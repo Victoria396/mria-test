@@ -37,7 +37,9 @@
         .inclusive__arrows {
             display: flex;
             justify-content: space-between;
-            margin-left: 33px;
+            margin-left: 520px;
+            position: absolute;
+            z-index: 10;
             div {
                 img {
                     width: 40px;
@@ -59,9 +61,12 @@
                 margin-top: -117px;
             .inclusive__line {
                 display: flex;
+                position: relative;
+                left: 0;
+                transition: all ease 1s;
             }
             .inclusive__slide1 {
-                margin-right: 143px;
+                padding-right: 143px;
                 display: grid; 
                 grid-template-columns: 1fr 1fr 1fr; 
                 grid-template-rows: 1fr; 
@@ -277,7 +282,6 @@
                 .inclusive__line {
                 }
                 .inclusive__slide1 {
-                    margin-right: 143px;
                     display: grid; 
                     grid-template-columns: 1fr; 
                     grid-template-rows: 1fr 1fr 1fr; 
@@ -388,6 +392,7 @@
                 }
                 .inclusive__slide1 {
                     margin-top: -30px;
+                    padding-right: 2px;
                 .sport {
                     flex-direction: column;
                 }
@@ -465,6 +470,7 @@
             h2 {
             }
             .inclusive__arrows {
+                margin-left: 255px;
                 div {
                     img {
                     }
@@ -536,6 +542,7 @@
                 font-size: 26px;
             }
             .inclusive__arrows {
+                    margin-left: 178px;
                 div {
                     img {
                     }
@@ -616,7 +623,7 @@
                 white-space: nowrap;
             }
             .inclusive__arrows {
-                margin-left: 59px;
+                margin-left: 230px;
                 margin-top: -3px;
                 div {
                     img {
@@ -634,6 +641,7 @@
                 }
                 .inclusive__slide1 {
                     margin-top: -40px;
+                    padding-right: 0;
                 a {
                     margin-top: 7px;
                 }
