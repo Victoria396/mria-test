@@ -1,2 +1,2 @@
 # mria-test
-Тестовое задание
+Тестовое задание. Демо: https://victoria396.github.io/mria-test/
